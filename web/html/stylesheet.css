@@ -1,0 +1,79 @@
+.rating{
+    display : flex;
+}
+
+.rating input{
+    position : absolute;
+    left     : -100vw;
+}
+
+.rating label{
+    width      : 40px;
+    height     : 40px;
+    padding    : 40px 25px 0;
+    overflow   : hidden;
+    background : url('images/star-fill.svg') no-repeat;
+    background-size: contain;
+}
+
+.rating:not(:hover) input:indeterminate + label,
+.rating:not(:hover) input:checked ~ input + label,
+.rating input:hover ~ input + label{
+    background: url('images/star.svg') no-repeat;
+    background-size: contain;
+}
+
+.navbar {
+    margin-bottom: 100px;
+}
+
+td a {
+    display: block;
+}
+
+.products a {
+    color: black;
+    text-decoration: none;
+}
+
+.review {
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin: 10px;
+}
+
+.edit-delete p{
+    display: inline-block;
+}
+
+.form-group {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.banner{
+    height: 75vh;
+    background-image: url("images/pexels-fthdgrl-10356533.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner h1 {
+    margin-top: -90px;
+    font-weight: 800;
+    font-size: 110px;
+    color: #3858e9;
+}
+.banner div{
+    width: 700px;
+    padding-top: 10%;
+    margin-left: 15%;
+}
+
+.banner-btn {
+    font-size: 25px;
+}
+
+div.col.text {
+    margin-top: 30px;
+}

@@ -1,30 +1,35 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dock It</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Rancho&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        body { font-family: Lato, sans-serif; }
-        h1, h2, h3, h4, h5, h6 { font-family: Rancho, cursive; }
-        h1 { font-size: 5em; margin-bottom: 0; text-shadow: 0 .2rem .5rem var(--blue); }
-        .bg-black { background-color: #232323; border-bottom: 5px solid var(--blue);}
+<?php
+require_once "includes/database.php";
+$pageTitle = "Home";
+include "includes/header.php";
+$sortBy = $_GET['sort'] ?? "Name";
+$dir = $_GET['dir'] ?? 'ASC';
+include "includes/functions.php";
+include "includes/nav.php";
 
-    </style>
-</head>
-<body class="vh-100">
-<div class="d-flex align-items-start flex-column h-100">
 
-    <div class="text-center sticky-top shadow-lg p-2 w-100 text-light bg-black">
-        <h1>Dock It</h1>
-        <a href="phpinfo.php" target="content_frame" class="px-2">PHP Info</a> |
-        <a href="world.php" target="content_frame" class="px-2">The World</a>
+?>
+<div class="container">
+    <div class="banner">
+        <div>
+            <h1>Art Prints Shop</h1>
+            <a href="products.php"><button type="button" class="btn btn-lg btn-danger banner-btn" >Learn More</button></a>
+        </div>
     </div>
-    <iframe src="phpinfo.php" name="content_frame" class="w-100 flex-grow-1 border-0"></iframe>
+    <div class="container-sm body">
+        <div class="row">
+            <div class="col text">
+                <h2 class="text-center">Our Start</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
+
 </body>
 </html>
+<?php
