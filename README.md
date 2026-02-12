@@ -16,6 +16,7 @@ docker compose up -d
 ```
 
 ## Install and activate plugins
+Replace author-final-wpcli-1 with your wpcli name
 ```shell
 docker exec -it author-final-wpcli-1 bash -c " 
 wp plugin delete hello akismet ; 
