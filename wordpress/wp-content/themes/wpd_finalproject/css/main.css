@@ -1,0 +1,119 @@
+:root {
+    --main-color: #f7b801;
+    --main-color-dark: #f18701;
+    --secondary-color: #3d348b;
+    --secondary-color-light: #7678ed;
+    --accent-color-dark: #f35b04;
+    --main-white: #f4f1de;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Navigation */
+.main-navigation {
+    background-color: var(--main-color) !important;
+    padding: 1em;
+    padding-bottom: 0;
+    font-weight: 600;
+
+
+
+}
+#site-navigation a {
+    color: #000;
+    padding: 1rem 1.4rem;
+    text-decoration: none;
+    border-radius: 1.1rem;
+}
+
+.menu-container a:hover, a:active{
+    background-color: var(--main-color-dark);
+}
+
+
+#site-navigation row {
+    height: fit-content;
+}
+.site-branding {
+    font-family: "Cabin Sketch", cursive;
+    font-size: 1.4rem;
+}
+
+.menu-container{
+    padding-top: 1.4rem;
+    font-size: 1.2rem;
+}
+
+/* Front-page */
+.banner{
+    width:100%;
+    margin-bottom:10px;
+    padding-bottom: 40px;
+    background: var(--main-color);
+}
+.banner{
+    -webkit-mask:
+            radial-gradient(45px at 50% 100%,#0000 98%,red) 50%/calc(1.85*40px) 100%;
+
+}
+
+.front-page h1 {
+    visibility: hidden;
+    max-height: 0;
+    margin: 0;
+}
+div.banner{
+background-color: var(--main-color);
+}
+
+.banner h2{
+    font-size: 100px;
+    padding: 2rem;
+}
+
+
+/* Pattern*/
+.author-parts ol {
+    list-style-type: none;
+}
+
+.author-parts ol li {
+    counter-increment: step-counter;
+    position: relative;
+    margin: 0 0 1rem 1.5rem;
+}
+
+.author-parts ol li::before {
+    content: counter(step-counter);
+    display: block;
+    position: absolute;
+    left: -4rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.wp_block_button a:hover{
+    color: var(--main-white) ;
+}
+
+.widget-area {
+    width: 60%;
+    padding: 40px;
+    padding-right: 15px;
+    padding-left: 30px;
+    margin-right: 3rem;
+    margin-top: 55px;
+    background-color: var(--main-color-dark);
+    border-radius: 1.1rem;
+}
+
